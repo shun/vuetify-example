@@ -1,0 +1,27 @@
+{
+  "name": "vuetify-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:pages": "GITHUB_PAGES=true vite build",
+    "deploy": "npm run build:pages && gh-pages -d dist",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.0",
+    "vue": "^3.4.0",
+    "vuetify": "^3.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "gh-pages": "^6.1.1",
+    "sass": "^1.69.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.0.0",
+    "vite-plugin-vuetify": "^2.0.0",
+    "vue-tsc": "^2.1.6"
+  }
+}
